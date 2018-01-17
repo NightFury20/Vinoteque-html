@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/d03452dd72.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <div class='app'>
+        <!-- menu-tiny -->
+        <div class='menu-tiny'>
+            <div class='site-width container'>
+                <div class='row'>
+                    <nav class="navbar navbar-toggleable-sm navbar-inverse">
+                        <div class='justify-content-end'>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-tiny" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="menu-tiny">
+                            <ul class="navbar-nav">
+                                <div>
+                                    <li class="nav-item active">
+                                        <a class="nav-link active" href="#">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Trade</a>
+                                    </li>
+                                </div>
+                                <div class='right'>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Register</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sign in</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Need help?</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- menu-main -->
+        <div class='menu-main'>
+            <div class='container'>
+                <div class='row'>
+                    <nav class="navbar navbar-toggleable-md navbar-inverse col-12">
+                        <a class="navbar-brand menu-main-logo" href="#"><img src='https://itmates.co.za/wp-content/uploads/2018/01/logo.png' /></a>
+
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">WINE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SPIRITS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">BRANDS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">PROMOTIONS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    
+                        <nav class='cart-nav nav justify-content-end'>
+                            <div class="cart-nav-link dropdown nav-link">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#search-collapse" aria-controls="search-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="fa fa-lg fa-search"></span>
+                                </button>
+                            </div>
+                            <div class="cart-nav-link dropdown nav-link">
+                                <button class="cart-btn btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-lg fa-shopping-cart"></i>
+                                    <span class="badge badge-primary">0</span>
+                                </button>
+                            </div>
+                            <div class='cart-nav-link nav-link'>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        </nav>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        <!-- search-bar -->
+        <div class='search-bar' >
+            <div class='container'>
+                <div class='row'>
+                    <nav class="navbar navbar-toggleable-md col-12">
+                        <div class="collapse navbar-collapse" id="search-collapse">
+                            <form class="search-bar-form form-inline my-2 my-lg-0">
+
+                                <div class="search-bar-input input-group col-md-3 mr-sm-2 ml-sm-2">
+                                    <div class="input-group-prepend">
+                                        <span class="fa fa-lg fa-search" id="basic-addon1"></span>
+                                    </div>
+                                    <input class="form-control" type="search" placeholder="Search" />
+                                </div>
+
+                                <select class="search-bar-input form-control col-md mr-sm-2 ml-xs-2">
+                                    <option disabled selected>Brand</option>
+                                    <option>...</option>
+                                </select>
+
+                                <select class="search-bar-input form-control col-md mr-sm-2 ml-sm-2">
+                                    <option disabled selected>Types/Cultivars</option>
+                                    <option>...</option>
+                                </select>
+
+                                <select class="search-bar-input form-control col-md mr-sm-2 ml-sm-2">
+                                    <option disabled selected>Packsizes</option>
+                                    <option>...</option>
+                                </select>
+
+                                <select class="search-bar-input form-control col-md mr-sm-2 ml-sm-2">
+                                    <option selected>All Vintages</option>
+                                    <option>...</option>
+                                </select>
+                                
+                                <button class="btn btn-default col-sm md-sm-2" type="submit">SEARCH</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class='container'>
+            <div class='index-row row'>
+                <!-- banner-lg -->
+                <div class='banner-lg-div col-lg-8 col-12'>
+                    <div class='banner-lg'>
+                        <a href='#'><img src='https://itmates.co.za/wp-content/uploads/2018/01/Banner_RareGems-e1515821950949.jpg' /></a>
+                    </div>
+                </div>
+                <div class='col-lg-4 col-12 d-none d-lg-inline-block'>
+                    <!-- banner-sm -->
+                    <div class='banner-sm'>
+                        <div class='pt-xl-5 pt-lg-4 pt-md-2' style='background-image: url(https://itmates.co.za/wp-content/uploads/2018/01/block-1-e1515833806207.jpg)'  >
+                            <h4 class='pl-3 pr-3'>SIGN UP TO OUR MONTHLY NEWSLETTER</h4>
+                            <button class='btn btn-default col-auto'>CLICK HERE</button>
+                        </div>
+                    </div>
+
+                    <!-- banner-sm -->
+                    <div class='banner-sm'>
+                        <div class='pt-xl-5 pt-lg-4 pt-md-2' style='background-image: url(https://itmates.co.za/wp-content/uploads/2018/01/block-2-e1515833814543.jpg)'  >
+                            <h4 class='pl-3 pr-3'>MATURE YOUR WINE WITH US</h4>
+                            <button class='btn btn-default col-auto'>CLICK HERE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+        <!-- product-category -->
+        <div class='product-category'>
+            <div class='container'>
+                <h2>Award Winners</h2>
+                <hr />
+
+                <div class='products row'>
+                    <div class='product-detail col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='badges row'>
+                            <div class='left col-6'>
+                                <h4></h4>
+                            </div>
+                            <div class='right col-6 align-self-end'>
+                                <h4></h4>
+                            </div>
+                        </div>
+                        <div class='icons row'>
+                            <div class='left col-6'>
+                            </div>
+                            <div class='right col-6 align-self-end'>
+                                    <div>
+                                        <i class='award-icon fa fa-2x fa-trophy'></i><p class='award'>3</p>
+                                    </div>
+                            </div>
+                        </div>
+        
+                        <img src='https://itmates.co.za/wp-content/uploads/2018/01/alto-rouge-2012-copy_be0ca5fa-323c-41d1-9f4c-8fa1764ee45f_1024x1024-e1516013331973.png' />
+                        <h4>ALTO</h4>
+                        <p class='description'>Rouge Red Blend 2015</p>
+                        <h4>R 85</h4>
+                        <p>R 510 x 6 750ml</p>
+                        <div class='cart-div row mr-auto ml-auto'>
+                            <div class='select-div col-5'>
+                                <select class="form-control" defaultValue='1'>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                </select>
+                            </div>
+        
+                            <button class='btn btn-default col-7'>ADD TO CART</button>
+                        </div>
+                    </div>
+
+                    <div class='product-detail col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='badges row'>
+                            <div class='left col-6'>
+                                <h4></h4>
+                            </div>
+                            <div class='right col-6 align-self-end'>
+                                <h4><h4><span class='new-badge badge badge-primary'>NEW</span></h4></h4>
+                            </div>
+                        </div>
+                        <div class='icons row'>
+                            <div class='left col-6'>
+                            </div>
+                            <div class='right col-6 align-self-end'>
+                                <div>
+                                    <i class='award-icon fa fa-2x fa-trophy'></i><p class='award'>2</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <img src='https://itmates.co.za/wp-content/uploads/2018/01/alto-rouge-2012-copy_be0ca5fa-323c-41d1-9f4c-8fa1764ee45f_1024x1024-e1516013331973.png' />
+                        <h4>ALTO</h4>
+                        <p class='description'>Shiraz 2015</p>
+                        <h4>R 199</h4>
+                        <p>R 1194 x 6 750ml</p>
+                        <div class='cart-div row mr-auto ml-auto'>
+                            <div class='select-div col-5'>
+                                <select class="form-control" defaultValue='1'>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                </select>
+                            </div>
+        
+                            <button class='btn btn-default col-7'>ADD TO CART</button>
+                        </div>
+                    </div>
+
+                    <div class='product-detail col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='badges row'>
+                            <div class='left col-6'>
+                                <h4><span class='size-badge badge badge-primary'>1.5L</span></h4>
+                            </div>
+                            <div class='right col-6 align-self-end'>
+                                <h4><span class='new-badge badge badge-primary'>NEW</span></h4>
+                            </div>
+                        </div>
+                        <div class='icons row'>
+                            <div class='left col-6'>
+                            </div>
+                            <div class='right col-6 align-self-end'>
+                                <div>
+                                    <i class='award-icon fa fa-2x fa-trophy'></i><p class='award'>1</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <img src='https://itmates.co.za/wp-content/uploads/2018/01/durbaville-hills-the-tangram-white-blend-2016-nv-new_1024x1024-e1516018574943.png' />
+                        <h4>DURBANVILLE HILLS</h4>
+                        <p class='description'>The Tangram White Blend 2016</p>
+                        <h4>R 375</h4>
+                        <p>R 2250 x 6 750ml</p>
+                        <div class='cart-div row mr-auto ml-auto'>
+                            <div class='select-div col-5'>
+                                <select class="form-control" defaultValue='1'>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                </select>
+                            </div>
+        
+                            <button class='btn btn-default col-7'>ADD TO CART</button>
+                        </div>
+                    </div>
+
+                    <div class='product-detail col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='badges row'>
+                            <div class='left col-6'>
+                                <h4></h4>
+                            </div>
+                            <div class='right col-6 align-self-end'>
+                                <h4></h4>
+                            </div>
+                        </div>
+                        <div class='icons row'>
+                            <div class='left col-6'>
+                            </div>
+                            <div class='right col-6 align-self-end'>
+                                <div>
+                                    <i class='award-icon fa fa-2x fa-trophy'></i><p class='award'>1</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <img src='https://itmates.co.za/wp-content/uploads/2018/01/nederburg-hh-brew-master-bordeaux-2015-nv-new_903c46b1-8c74-4254-8516-e5836e26f314_1024x1024-e1516018564917.png' />
+                        <h4>NEDERBERG</h4>
+                        <p class='description'>The Brew Master Bordeaux Blend 2015</p>
+                        <h4>R 170</h4>
+                        <p>R 1020 x 6 750ml</p>
+                        <div class='cart-div row mr-auto ml-auto'>
+                            <div class='select-div col-5'>
+                                <select class="form-control" defaultValue='1'>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                </select>
+                            </div>
+        
+                            <button class='btn btn-default col-7'>ADD TO CART</button>
+                        </div>
+                    </div>
+
+                    <div class='product-detail col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='badges row'>
+                            <div class='left col-6'>
+                                <h4></h4>
+                            </div>
+                            <div class='right col-6 align-self-end'>
+                                <h4></h4>
+                            </div>
+                        </div>
+                        <div class='icons row'>
+                            <div class='left col-6'>
+                            </div>
+                            <div class='right col-6 align-self-end'>
+                                    <div>
+                                        <i class='award-icon fa fa-2x fa-trophy'></i><p class='award'>3</p>
+                                    </div>
+                            </div>
+                        </div>
+        
+                        <img src='https://itmates.co.za/wp-content/uploads/2018/01/alto-rouge-2012-copy_be0ca5fa-323c-41d1-9f4c-8fa1764ee45f_1024x1024-e1516013331973.png' />
+                        <h4>ALTO</h4>
+                        <p class='description'>Rouge Red Blend 2015</p>
+                        <h4>R 85</h4>
+                        <p>R 510 x 6 750ml</p>
+                        <div class='cart-div row mr-auto ml-auto'>
+                            <div class='select-div col-5'>
+                                <select class="form-control" defaultValue='1'>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                </select>
+                            </div>
+        
+                            <button class='btn btn-default col-7'>ADD TO CART</button>
+                        </div>
+                    </div>
+
+                    <div class='product-detail col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='badges row'>
+                            <div class='left col-6'>
+                                <h4></h4>
+                            </div>
+                            <div class='right col-6 align-self-end'>
+                                <h4><h4><span class='new-badge badge badge-primary'>NEW</span></h4></h4>
+                            </div>
+                        </div>
+                        <div class='icons row'>
+                            <div class='left col-6'>
+                            </div>
+                            <div class='right col-6 align-self-end'>
+                                <div>
+                                    <i class='award-icon fa fa-2x fa-trophy'></i><p class='award'>2</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <img src='https://itmates.co.za/wp-content/uploads/2018/01/alto-rouge-2012-copy_be0ca5fa-323c-41d1-9f4c-8fa1764ee45f_1024x1024-e1516013331973.png' />
+                        <h4>ALTO</h4>
+                        <p class='description'>Shiraz 2015</p>
+                        <h4>R 199</h4>
+                        <p>R 1194 x 6 750ml</p>
+                        <div class='cart-div row mr-auto ml-auto'>
+                            <div class='select-div col-5'>
+                                <select class="form-control" defaultValue='1'>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                </select>
+                            </div>
+        
+                            <button class='btn btn-default col-7'>ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- product-category -->
+        <div class='product-category'>
+                <div class='container'>
+                    <h2>Best Sellers</h2>
+                    <hr />
+    
+                    <div class='products row'>
+                        <div class='product-detail col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                            <div class='badges row'>
+                                <div class='left col-6'>
+                                    <h4></h4>
+                                </div>
+                                <div class='right col-6 align-self-end'>
+                                    <h4></h4>
+                                </div>
+                            </div>
+                            <div class='icons row'>
+                                <div class='left col-6'>
+                                </div>
+                                <div class='right col-6 align-self-end'>
+                                        
+                                </div>
+                            </div>
+            
+                            <img src='https://itmates.co.za/wp-content/uploads/2018/01/alto-rouge-2012-copy_be0ca5fa-323c-41d1-9f4c-8fa1764ee45f_1024x1024-e1516013331973.png' />
+                            <h4>ALTO</h4>
+                            <p class='description'>Rouge Red Blend 2015</p>
+                            <h4>R 85</h4>
+                            <p>R 510 x 6 750ml</p>
+                            <div class='cart-div row mr-auto ml-auto'>
+                                <div class='select-div col-5'>
+                                    <select class="form-control" defaultValue='1'>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                        <option value='5'>5</option>
+                                    </select>
+                                </div>
+            
+                                <button class='btn btn-default col-7'>ADD TO CART</button>
+                            </div>
+                        </div>
+    
+                        <div class='product-detail col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                            <div class='badges row'>
+                                <div class='left col-6'>
+                                    <h4></h4>
+                                </div>
+                                <div class='right col-6 align-self-end'>
+                                    <h4><h4><span class='new-badge badge badge-primary'>NEW</span></h4></h4>
+                                </div>
+                            </div>
+                            <div class='icons row'>
+                                <div class='left col-6'>
+                                </div>
+                                <div class='right col-6 align-self-end'>
+                                    <div>
+                                        <i class='award-icon fa fa-2x fa-trophy'></i><p class='award'>2</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <img src='https://itmates.co.za/wp-content/uploads/2018/01/alto-rouge-2012-copy_be0ca5fa-323c-41d1-9f4c-8fa1764ee45f_1024x1024-e1516013331973.png' />
+                            <h4>ALTO</h4>
+                            <p class='description'>Shiraz 2015</p>
+                            <h4>R 199</h4>
+                            <p>R 1194 x 6 750ml</p>
+                            <div class='cart-div row mr-auto ml-auto'>
+                                <div class='select-div col-5'>
+                                    <select class="form-control" defaultValue='1'>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                        <option value='5'>5</option>
+                                    </select>
+                                </div>
+            
+                                <button class='btn btn-default col-7'>ADD TO CART</button>
+                            </div>
+                        </div>
+    
+                        <div class='product-detail col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                            <div class='badges row'>
+                                <div class='left col-6'>
+                                    <h4><span class='size-badge badge badge-primary'>1.5L</span></h4>
+                                </div>
+                                <div class='right col-6 align-self-end'>
+                                    <h4><span class='new-badge badge badge-primary'>NEW</span></h4>
+                                </div>
+                            </div>
+                            <div class='icons row'>
+                                <div class='left col-6'>
+                                </div>
+                                <div class='right col-6 align-self-end'>
+                                    <div>
+                                        <i class='award-icon fa fa-2x fa-trophy'></i><p class='award'>1</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <img src='https://itmates.co.za/wp-content/uploads/2018/01/durbaville-hills-the-tangram-white-blend-2016-nv-new_1024x1024-e1516018574943.png' />
+                            <h4>DURBANVILLE HILLS</h4>
+                            <p class='description'>The Tangram White Blend 2016</p>
+                            <h4>R 375</h4>
+                            <p>R 2250 x 6 750ml</p>
+                            <div class='cart-div row mr-auto ml-auto'>
+                                <div class='select-div col-5'>
+                                    <select class="form-control" defaultValue='1'>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                        <option value='5'>5</option>
+                                    </select>
+                                </div>
+            
+                                <button class='btn btn-default col-7'>ADD TO CART</button>
+                            </div>
+                        </div>
+    
+                        <div class='product-detail col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                            <div class='badges row'>
+                                <div class='left col-6'>
+                                    <h4></h4>
+                                </div>
+                                <div class='right col-6 align-self-end'>
+                                    <h4></h4>
+                                </div>
+                            </div>
+                            <div class='icons row'>
+                                <div class='left col-6'>
+                                </div>
+                                <div class='right col-6 align-self-end'>
+                                    
+                                </div>
+                            </div>
+            
+                            <img src='https://itmates.co.za/wp-content/uploads/2018/01/nederburg-hh-brew-master-bordeaux-2015-nv-new_903c46b1-8c74-4254-8516-e5836e26f314_1024x1024-e1516018564917.png' />
+                            <h4>NEDERBERG</h4>
+                            <p class='description'>The Brew Master Bordeaux Blend 2015</p>
+                            <h4>R 170</h4>
+                            <p>R 1020 x 6 750ml</p>
+                            <div class='cart-div row mr-auto ml-auto'>
+                                <div class='select-div col-5'>
+                                    <select class="form-control" defaultValue='1'>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                        <option value='5'>5</option>
+                                    </select>
+                                </div>
+            
+                                <button class='btn btn-default col-7'>ADD TO CART</button>
+                            </div>
+                        </div>
+    
+                        <div class='product-detail col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                            <div class='badges row'>
+                                <div class='left col-6'>
+                                    <h4></h4>
+                                </div>
+                                <div class='right col-6 align-self-end'>
+                                    <h4></h4>
+                                </div>
+                            </div>
+                            <div class='icons row'>
+                                <div class='left col-6'>
+                                </div>
+                                <div class='right col-6 align-self-end'>
+                                        <div>
+                                            <i class='award-icon fa fa-2x fa-trophy'></i><p class='award'>3</p>
+                                        </div>
+                                </div>
+                            </div>
+            
+                            <img src='https://itmates.co.za/wp-content/uploads/2018/01/alto-rouge-2012-copy_be0ca5fa-323c-41d1-9f4c-8fa1764ee45f_1024x1024-e1516013331973.png' />
+                            <h4>ALTO</h4>
+                            <p class='description'>Rouge Red Blend 2015</p>
+                            <h4>R 85</h4>
+                            <p>R 510 x 6 750ml</p>
+                            <div class='cart-div row mr-auto ml-auto'>
+                                <div class='select-div col-5'>
+                                    <select class="form-control" defaultValue='1'>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                        <option value='5'>5</option>
+                                    </select>
+                                </div>
+            
+                                <button class='btn btn-default col-7'>ADD TO CART</button>
+                            </div>
+                        </div>
+    
+                        <div class='product-detail col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                            <div class='badges row'>
+                                <div class='left col-6'>
+                                    <h4></h4>
+                                </div>
+                                <div class='right col-6 align-self-end'>
+                                    <h4><h4><span class='new-badge badge badge-primary'>NEW</span></h4></h4>
+                                </div>
+                            </div>
+                            <div class='icons row'>
+                                <div class='left col-6'>
+                                </div>
+                                <div class='right col-6 align-self-end'>
+                                    <div>
+                                        <i class='award-icon fa fa-2x fa-trophy'></i><p class='award'>2</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <img src='https://itmates.co.za/wp-content/uploads/2018/01/alto-rouge-2012-copy_be0ca5fa-323c-41d1-9f4c-8fa1764ee45f_1024x1024-e1516013331973.png' />
+                            <h4>ALTO</h4>
+                            <p class='description'>Shiraz 2015</p>
+                            <h4>R 199</h4>
+                            <p>R 1194 x 6 750ml</p>
+                            <div class='cart-div row mr-auto ml-auto'>
+                                <div class='select-div col-5'>
+                                    <select class="form-control" defaultValue='1'>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                        <option value='5'>5</option>
+                                    </select>
+                                </div>
+            
+                                <button class='btn btn-default col-7'>ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class='container'>
+            <div class='row'>
+                <div class='col-12 col-md-4'>
+                    <!-- banner-footer -->
+                    <div class='banner-footer'>
+                        <button class='btn' style='background-image: url(https://itmates.co.za/wp-content/uploads/2018/01/block-2-e1515833814543.jpg)'>
+                            <h4>Latest</h4>
+                            <h3>NEWS</h3>
+                        </button>
+                    </div>
+                </div>
+
+                <div class='col-12 col-md-4'>
+                    <!-- banner-footer -->
+                    <div class='banner-footer'>
+                        <button class='btn' style='background-image: url(https://itmates.co.za/wp-content/uploads/2018/01/block-2-e1515833814543.jpg)'>
+                            <h4>Latest</h4>
+                            <h3>NEWS</h3>
+                        </button>
+                    </div>
+                </div>
+
+                <div class='col-12 col-md-4'>
+                    <!-- banner-footer -->
+                    <div class='banner-footer'>
+                        <button class='btn' style='background-image: url(https://itmates.co.za/wp-content/uploads/2018/01/block-2-e1515833814543.jpg)'>
+                            <h4>Latest</h4>
+                            <h3>NEWS</h3>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- menu-footer -->
+        <div class='menu-footer'>
+            <div class='container'>
+                <div class='sub-menus row'>
+                    <div class='col-12 col-sm-6 col-md-3'>
+                        <h4>About Vinoteque</h4>
+                        <p><a href='#'>About</a></p>
+                        <p><a href='#'>Winebank</a></p>
+                        <p><a href='#'>Brands</a></p>
+                        <p><a href='#'>News</a></p>
+                        <p><a href='#'>Promotions</a></p>
+                    </div>
+
+                    <div class='col-12 col-sm-6 col-md-3'>
+                        <h4>Customer Service</h4>
+                        <p><a href='#'>Need help?</a></p>
+                        <p><a href='#'>Terms of Use</a></p>
+                        <p><a href='#'>Delivery Policy</a></p>
+                        <p><a href='#'>Trade Sales</a></p>
+                        <p><a href='#'>FAQ</a></p>
+                    </div>
+
+                    <div class='col-12 col-sm-6 col-md-3'>
+                        <h4>My Account</h4>
+                        <p><a href='#'>Sign In</a></p>
+                        <p><a href='#'>Forgot Password?</a></p>
+                        <p><a href='#'>Create Account</a></p>
+                    </div>
+
+                    <div class='col-12 col-sm-6 col-md-3'>
+                        <h4>Newsletter</h4>
+                        <input class='form-control' placeholder='Signup for our newsletter' />
+                        <button class='sign-up btn btn-primary'>SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class='ribbon'>
+                <div class='container'>
+                    <div class='row'>
+                        <div class='logo col-xl-2 mr-auto ml-auto'>
+                            <img src='https://itmates.co.za/wp-content/uploads/2018/01/ribbon_logo.png' />
+                        </div>
+
+                        <div class='copyright-col col-xl-8 pr-xl-0 pl-xl-0 pt-0'>
+                            <p>Copyright © Vinoteque 2018. All rights reserved. Distell Terms & Conditions | Enjoy Responsibly. Not for Sale to Persons Under the Age of 18.</p>
+                        </div>
+
+                        <div class='social col-xl-2'>
+                            <div class='row'>
+                                <a href='#' class='col-4'><i class='fa fa-2x fa-facebook'></i></a>
+                                <a href='#' class='col-4'><i class='fa fa-2x fa-twitter'></i></a>
+                                <a href='#' class='col-4'><i class='fa fa-2x fa-instagram'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='spacer'>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script src="/bundle.js"></script>
+</html>
